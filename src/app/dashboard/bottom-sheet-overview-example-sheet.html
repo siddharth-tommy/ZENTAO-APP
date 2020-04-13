@@ -1,0 +1,36 @@
+<style>
+  mat-icon{
+    vertical-align: middle;
+  }
+  button{
+    cursor: pointer
+  }
+  .btn-info{
+    margin-left: 3%;
+  }
+</style>
+
+<div class="container pb-3">
+  <div class="title">Title</div><span><input type="text" class="form-control"></span>
+
+  <button mat-button [matMenuTriggerFor]="mainDropdown">Priority <mat-icon>keyboard_arrow_down</mat-icon></button>
+<mat-menu #mainDropdown="matMenu">
+  <button mat-menu-item>Normal</button>
+  <button mat-menu-item>Critical</button>
+  <button mat-menu-item>Important</button>
+  <button mat-menu-item>Low</button>
+</mat-menu>
+
+  <input matInput [matDatepicker]="picker" placeholder="Choose Date">
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+
+
+
+  <input matInput type="time" placeholder="00:00">
+
+  <div><mat-checkbox color="primary" >test</mat-checkbox></div>
+  <button class="btn btn-primary">Save</button>
+  <button class="btn btn-info" (click)="close()">Back</button>
+
+</div>

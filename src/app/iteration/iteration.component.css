@@ -1,0 +1,99 @@
+#subNavbar{
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+#subNavbar .nav{
+    display: inline-block;
+}
+.nav-default>li{
+    float: left;
+}
+.nav-default li a{
+    padding: 10px;
+    font-size: 15px;
+    color: black;
+    background: whitesmoke;
+    border: 1px solid grey;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.nav-default li a:hover,.nav-default li a:active{
+    background-color: #22A7F0;
+    transition: 0.9s;  
+}
+button{
+    font-size: 14.5px;
+    border: none;
+}
+.light-yellow{
+    background-color: #FADA5E;
+}
+.table-ul ul{
+    list-style-type: none;
+    padding: 0;
+    height: 240px;
+    overflow-y: auto;
+}
+.table-ul ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color:black;
+    
+}
+.table-ul ul li a:hover{
+  font-size: 19px;
+  transition: 1s;
+}
+.table-ul ul li{
+   background-color: transparent;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   padding-left: 15px;
+}
+.table-ul ul li:hover, .table-ul ul li:active{
+   background-color: whitesmoke;
+   border-left: 3px solid black;
+   cursor: pointer;
+}
+.dashboard-body{
+    background-color: #EFEFEF;
+    height: auto;
+}
+.status-monitoring-table{
+    background-color: white;
+}
+.product-header{
+    font-size: 17px;
+    color: black;
+    font-weight: 400;
+    margin: 19px;
+    font-weight: bold;
+}
+.stories-monitor{
+    font-size: 30px;
+    color: black;
+}
+table {
+   width: 100%;
+ 
+ }
+ th.mat-sort-header-sorted {
+   color: black;
+ }
+ tr:nth-child(even) {
+     background-color: whitesmoke;
+ }
+ .table-div{
+     height: 350px;
+     overflow-y: auto;
+     margin-bottom: 10px;
+   }
+   .status-red-text{
+       color: tomato;
+   }
+mat-icon{
+    vertical-align: middle;
+}

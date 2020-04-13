@@ -1,0 +1,259 @@
+
+#subNavbar{
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+#subNavbar .nav{
+    display: inline-block;
+}
+.nav-default>li{
+    float: left;
+}
+.nav-default li a{
+    padding: 10px;
+    font-size: 15px;
+    color: black;
+    background: whitesmoke;
+    border: 1px solid grey;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+a:active{
+    color: white;
+    background-color: black;
+}
+
+.nav-default li a:hover,.nav-default li a:active{
+    background-color: #22A7F0;
+    transition: 0.9s;
+}
+
+.dashboard-body{
+    background-color: #EFEFEF;
+    height: auto;
+}
+.status-monitoring-table{
+    background-color: white;
+}
+.welcome-msg{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.date{
+    color: grey;
+}
+.remined-text{
+    color: black;
+    font-size: 17px;
+}
+
+@media(min-width:769px){
+    .welcome-div-num{
+        font-size: 30px;
+        color: grey;
+        font-weight: 500;
+        text-align: left;
+    }
+    .welcome-div-num:hover{
+        font-size: 34px;
+        color: black;
+        font-weight: 500;
+        
+    }
+    .welcome-stepper-div{
+        border-right: 0.5px solid grey;
+    }
+    .numbers{
+        padding: 12% 1% 7% 12%;
+    }
+}
+@media(max-width:768px){
+  .welcome-stepper-div{
+    border-bottom: 0.5px solid grey;
+}
+}
+.fixed-task-stepper{
+    height: 230px;
+    overflow-y: auto;
+}
+
+.task-history-header{
+    padding-top: 6px;
+    padding-left: 20px;
+}
+.more-icon{
+    right: 12px;
+    top: 3px;
+}
+
+/* arrowed buttons */
+body {
+    /* just for this demo. */
+    
+    padding: 30px;
+ }
+ 
+ .btn {
+    /* just for this demo. */
+    
+    margin-top: 5px;
+ }
+ 
+ .btn-arrow-right,
+ .btn-arrow-left {
+    position: relative;
+    padding-left: 18px;
+    padding-right: 18px;
+ }
+ 
+ .btn-arrow-right {
+    padding-left: 36px;
+ }
+ 
+ .btn-arrow-left {
+    padding-right: 36px;
+ }
+ 
+ .btn-arrow-right:before,
+ .btn-arrow-right:after,
+ .btn-arrow-left:before,
+ .btn-arrow-left:after {
+    /* make two squares (before and after), looking similar to the button */
+    
+    content: "";
+    position: absolute;
+    top: 5px;
+    /* move it down because of rounded corners */
+    
+    width: 22px;
+    height: 24px;
+    
+    background: inherit;
+    /* use parent background */
+    
+    border: inherit;
+    /* use parent border */
+    
+    border-left-color: transparent;
+    /* hide left border */
+    
+    border-bottom-color: transparent;
+    /* hide bottom border */
+    
+    border-radius: 0px 4px 0px 0px;
+    /* round arrow corner, the shorthand property doesn't accept "inherit" so it is set to 4px */
+    
+    -webkit-border-radius: 0px 4px 0px 0px;
+    -moz-border-radius: 0px 4px 0px 0px;
+ }
+ 
+ .btn-arrow-right:before,
+ .btn-arrow-right:after {
+    transform: rotate(45deg);
+    /* rotate right arrow squares 45 deg to point right */
+    
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+ }
+ 
+ .btn-arrow-left:before,
+ .btn-arrow-left:after {
+    transform: rotate(225deg);
+    /* rotate left arrow squares 225 deg to point left */
+    
+    -webkit-transform: rotate(225deg);
+    -moz-transform: rotate(225deg);
+    -o-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+ }
+ 
+ .btn-arrow-right:before,
+ .btn-arrow-left:before {
+    /* align the "before" square to the left */
+    
+    left: -11px;
+ }
+ 
+ .btn-arrow-right:after,
+ .btn-arrow-left:after {
+    /* align the "after" square to the right */
+    
+    right: -11px;
+ }
+ 
+ .btn-arrow-right:after,
+ .btn-arrow-left:before {
+    /* bring arrow pointers to front */
+    
+    z-index: 1;
+ }
+ 
+ .btn-arrow-right:before,
+ .btn-arrow-left:after {
+    /* hide arrow tails background */
+    
+    background-color: white;
+ }
+ button{
+     font-size: 14.5px;
+     border: none;
+ }
+ .light-yellow{
+     background-color: #FADA5E;
+ }
+ .table-ul ul{
+     list-style-type: none;
+     padding: 0;
+     height: 240px;
+     overflow-y: auto;
+ }
+ .table-ul ul li a{
+     text-decoration: none;
+     font-size: 16px;
+     color:black;
+     
+ }
+ .table-ul ul li a:hover{
+   font-size: 19px;
+   transition: 1s;
+}
+ .table-ul ul li{
+    background-color: transparent;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+ }
+ .table-ul ul li:hover{
+    background-color: whitesmoke;
+    border-left: 3px solid black;
+    cursor: pointer;
+ }
+ .total-story{
+     font-size: 18px;
+     color: grey;
+ }
+ .stories-monitor{
+     font-size: 30px;
+     color: black;
+ }
+ table {
+    width: 100%;
+  
+  }
+  th.mat-sort-header-sorted {
+    color: black;
+  }
+  tr:nth-child(even) {
+      background-color: whitesmoke;
+  }
+  .mat-table{
+      height: 350px;
+      overflow-y: auto;
+      margin-bottom: 10px;
+    }

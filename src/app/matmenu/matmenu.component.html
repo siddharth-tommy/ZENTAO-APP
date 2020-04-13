@@ -1,0 +1,45 @@
+
+  <button [matMenuTriggerFor]="mainDropdown" class="btn btn-primary btn-circle btn-lg mb-2 ml-1">D</button>
+
+
+                <mat-menu #mainDropdown="matMenu">
+                    <button type="button" class="btn btn-primary btn-circle btn-lg mb-2 ml-1">D</button> <span class="ml-2 user-info-text">Demo</span>
+                  <button mat-menu-item>Profile</button>
+                  <button mat-menu-item>Password</button>
+                  <hr>
+                  <button mat-menu-item [matMenuTriggerFor]="theme">Theme</button>
+                  <button mat-menu-item [matMenuTriggerFor]="lang">Language</button>
+                  <button mat-menu-item>Custom Menu</button>
+                  <hr>
+                  <button mat-menu-item [matMenuTriggerFor]="help">Help</button>
+                  <button mat-menu-item>About</button>
+                </mat-menu>
+                
+               
+                
+                <mat-menu #theme="matMenu">
+                  <button mat-menu-item>Default</button>
+                  <button mat-menu-item>Red</button>
+                  <button mat-menu-item>Green</button>
+                  <button mat-menu-item>Pink</button>
+                  <button mat-menu-item>Blackberry</button>
+                  <button mat-menu-item>Classic</button>
+                  <button mat-menu-item>Purple</button>
+                  <button mat-menu-item>Corals</button>
+                </mat-menu>
+                
+                <mat-menu #lang="matMenu">
+                  <button mat-menu-item>简体</button>
+                  <button mat-menu-item>繁體</button>
+                  <button mat-menu-item>English</button>
+                  <button mat-menu-item>Deutsch</button>
+                  <button mat-menu-item>Français</button>
+                </mat-menu>
+                
+ 
+                <mat-menu #help="matMenu">
+                    <button mat-menu-item>ZenTao Tutorial</button>
+                    <button mat-menu-item>User Manual</button>
+                    <button mat-menu-item>Change Log</button>
+                    
+                  </mat-menu>

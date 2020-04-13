@@ -1,0 +1,12 @@
+.user-info-text{
+    color: #111111;
+    font-size: 18px;
+    font-family: cursive;
+}
+button{
+    font-family: cursive;
+    cursor: pointer;
+}
+mat-icon{
+    vertical-align: middle;
+}

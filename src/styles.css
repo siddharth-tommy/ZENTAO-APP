@@ -1,0 +1,91 @@
+/* You can add global styles to this file, and also import other style files */
+::selection{
+    background-color: black;
+    color: white;
+}
+html, body { height: 100%;
+overflow-x: hidden; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.cursor{
+    cursor: pointer;
+}
+mat-icon{
+    cursor: pointer;
+}
+
+/* custom scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    
+    background: linear-gradient(180deg, #0F75ED,#111);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0F75ED; 
+    border: 1px solid #111;
+  }
+
+  /* tooltip style */
+  .mat-tooltip {
+    /* your own custom styles here */ 
+    /* e.g. */
+    color: white;
+    background: #111;
+    border: 1px solid black;
+    font-size: 14px;
+    font-family: cursive;
+}
+
+/* nummber innside the small circle */
+span.status1 {
+  background: #111;
+  border-radius: 0.8em;
+  -moz-border-radius: 0.8em;
+  -webkit-border-radius: 0.8em;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.6em;
+  margin-right: 5px;
+  text-align: center;
+  width: 1.6em; 
+}
+span.status2 {
+  background: black;
+  border-radius: 0.8em;
+  -moz-border-radius: 0.8em;
+  -webkit-border-radius: 0.8em;
+  color: #fff;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.6em;
+  margin-right: 5px;
+  text-align: center;
+  width: 1.6em; 
+}
+
+span.status3 {
+  background: green;
+  border-radius: 0.8em;
+  -moz-border-radius: 0.8em;
+  -webkit-border-radius: 0.8em;
+  color: #111;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.6em;
+  margin-right: 5px;
+  text-align: center;
+  width: 1.6em; 
+}

@@ -1,0 +1,75 @@
+<style>
+    .header-filter select{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    /* border-radius: 8px; */
+}
+option{
+    background-color: white;
+    color: #0D64D5;
+}
+select, textarea{
+    width: -webkit-fill-available;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+</style>
+<h1>Create Product</h1>
+<div>
+  <div>Product Name</div> <span><input placeholder="My product" type="text" class="form-control"></span>
+  <div>Code</div> <span><input placeholder="code name" type="text" class="form-control"></span>
+  <div>Product Line</div>
+  <select name="dropdown" id="filter-header">
+    Product Line
+    <option value="">iOs</option>
+    <option value="">Desktop Client</option>
+    <option value="">Android</option>
+</select>
+<div>Product Owner</div>
+<select name="dropdown" id="filter-header">
+  Product Owner
+  <option value="">Demo</option>
+  <option value="">Demo 1</option>
+  <option value="">Demo 2</option>
+  <option value="">Demo 3</option>
+  <option value="">Demo 4</option>
+  <option value="">Demo 5</option>
+</select>
+<div>QA</div>
+<select name="dropdown" id="filter-header">
+  QA
+  <option value="">QA</option>
+  <option value="">QA 1</option>
+  <option value="">QA 2</option>
+  <option value="">QA 3</option>
+  <option value="">QA 4</option>
+  <option value="">QA 5</option>
+</select>
+<div>Release Manager</div>
+<select name="dropdown" id="filter-header">
+  QA
+  <option value="">Release Manager</option>
+  <option value="">Release Manager 1</option>
+  <option value="">Release Manager 2</option>
+  <option value="">Release Manager 3</option>
+  <option value="">Release Manager 4</option>
+  <option value="">Release Manager 5</option>
+</select>
+<div>Type</div>
+<select name="dropdown" id="filter-header">
+  Type
+  <option value="">Normal</option>
+  <option value="">Multi-Branch</option>
+  <option value="">Multi-Platform</option>
+</select>
+ <span><button class="btn btn-rounded">Manage PL</button></span>
+ <br>
+
+ Description
+ <textarea placeholder="My description" name="description_create_product" id="description_product"></textarea>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()"  class="btn btn-primary">Back</button>
+  <button mat-button cdkFocusInitial class="btn btn-success ml-2" (click)="save()">Save</button>
+</div>

@@ -1,0 +1,16 @@
+th.mat-sort-header-sorted {
+    color: black;
+  }
+  tr:nth-child(even) {
+      background-color: whitesmoke;
+  }
+  .table-div{
+      height: 350px;
+      overflow-y: auto;
+      margin-bottom: 10px;
+    }
+ 
+    table {
+        width: 100%;
+      
+      }

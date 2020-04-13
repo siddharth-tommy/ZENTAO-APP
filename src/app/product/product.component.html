@@ -1,0 +1,237 @@
+<br>
+<nav id="subNavbar" class="mb-4">
+    <ul class="nav nav-default" style="position: static;">
+        <li class="active" ><a>Story</a>
+        </li>
+        <li><a>Plan</a>
+        </li>
+        <li class="divider"></li>
+        <li><a>Release</a>
+        </li>
+        <li ><a>Roadmap</a>
+        </li>
+        <li ><a>Iteration</a>
+        </li>
+        <li><a>Dynamics</a>
+        </li>
+        <li class="divider"></li>
+        <li  data-id="myProject"><a>Iteration</a>
+        </li>
+        <li  data-id="dynamic"><a>Dynamics</a>
+        </li>
+        <li class="divider"></li>
+        <li  data-id="profile"><a>Doc</a>
+        </li>
+        <li  data-id="manageContacts"><a>Module</a>
+        </li>
+        <li  data-id="manageContacts"><a>Overview</a>
+        </li>
+    </ul>
+    <button (click)="openDialog()" style="margin-right: 30px;float: right;margin-top: -7px;" class="btn btn-primary"><span>
+        <mat-icon style="vertical-align: middle;margin-right: 5px">add_circle</mat-icon>
+    </span>Create Product 
+    </button>
+</nav>
+<div class="dashboard-body p-3">
+    <div class="row mt-4 ">
+        <div class="col-xl-8 col-lg-8 col-md-12 col-12 col-12">
+            <div class="status-monitoring-table">
+                <div class="row">
+                    <div class="col-xl-11 col-lg-11 col-md-11 col-sm-11 col-11">
+                        <div class="col-xl-11 col-lg-11 col-md-11 col-sm-11 col-11 task-history-header">
+                            <div class="product-header">Product Report</div>
+                        </div>
+                    </div>
+                    <div class="col-xl-1 col-sm-1 col-lg-1 col-md-1 col-1">
+                        <button mat-button [matMenuTriggerFor]="mainDropdown" class="mt-2">
+                            <mat-icon matTooltip="Edit widget">drag_indicator</mat-icon>
+                        </button>
+                        <mat-menu #mainDropdown="matMenu">
+                            <button mat-menu-item>Refresh</button>
+                            <button mat-menu-item>Edit</button>
+                            <button mat-menu-item>Hide</button>
+                            <button mat-menu-item>Add Block</button>
+                            <button mat-menu-item>Reset Layout</button>
+                        </mat-menu>
+                    </div>
+                </div>
+                <div class="row p-4 table-ul">
+                    <!-- stepper div start -->
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 welcome-stepper-div">
+
+                        <ul>
+                            <li>
+                                <a>IOS/Dancing App</a>
+                            </li>
+                            <li>
+                                <a>Desktop client/Zentao desktop</a>
+                            </li>
+                            <li>
+                                <a>Desktop client/Zentao cloud</a>
+                            </li>
+                            <li>
+                                <a>Desktop client/Taiji App</a>
+                            </li>
+                            <li>
+                                <a>Android/Xuanxuan IM Tool</a>
+                            </li>
+                            <li>
+                                <a>A smart watch development</a>
+                            </li>
+                            <li>
+                                <a>Zsite</a>
+                            </li>
+                            <li>
+                                <a>Zdoo crm</a>
+                            </li>
+                            <li>
+                                <a>BigRocket</a>
+                            </li>
+                            <li>
+                                <a>Pure water module</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- stepper-div-end -->
+
+                    <!-- monitoring numbers start -->
+                    <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                       <div class="row mt-5">
+                           <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
+                               <div class="row">
+                                   <div class="col-12">
+                                    <div class="text-center total-story">
+                                        Total Stories
+                                    </div>
+                                   </div>
+                               </div>
+                               <div class="row p-3">
+                                <div class="col-12">
+                                 <div class="text-center">
+                                     <span class="stories-monitor">14</span>
+                                 </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                 <div class="text-center">
+                                     <button class="btn btn-rounded btn-primary" style="border-radius: 15px;">See all</button>
+                                 </div>
+                                </div>
+                            </div>
+                           </div>
+                           <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12">
+                            <img class="ml-2" width="100%" src="../../assets/img/progress chart1.PNG" alt="">
+                        </div>
+                       </div>
+                    </div>
+                    <!-- monitoring numbers end -->
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+            <div class="status-monitoring-table" style="height: 360px;">
+                <div class="row">
+                    <div class="col-xl-11 col-lg-11 col-md-11 col-sm-11 col-11">
+                        <div class="task-history-header">
+                            <div class="product-header">Product Overview</div>
+                        </div>
+                    </div>
+                    <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 more-icon pl-0">
+                        <button style="margin-left: -15px;margin-top: 8px;" mat-button [matMenuTriggerFor]="mainDropdown">
+                            <mat-icon matTooltip="Edit widget">drag_indicator</mat-icon>
+                        </button>
+                        <mat-menu #mainDropdown="matMenu">
+                            <button mat-menu-item>Refresh</button>
+                            <button mat-menu-item>Edit</button>
+                            <button mat-menu-item>Hide</button>
+                            <button mat-menu-item>Add Block</button>
+                            <button mat-menu-item>Reset Layout</button>
+                        </mat-menu>
+                    </div>
+                </div>
+                <div class="row p-4">
+                    <!-- task history stepper start -->
+
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 fixed-task-stepper mb-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <img style="padding: 4%;" matTooltip="Products: 10" src="../../assets/img/circular chart 2.PNG" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- task history stepper end -->
+                </div>
+            </div>
+        </div>
+    </div>
+   <div class="row pt-3">
+        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 mat-table pr-0">
+            <div class="product-header">Active Products</div>
+            
+                <button style="margin-top: -45px;margin-right: 5px;" mat-button [matMenuTriggerFor]="mainDropdown" class="float-right mb-2">
+                    <mat-icon matTooltip="Edit widget">drag_indicator</mat-icon>
+                </button>
+                <mat-menu #mainDropdown="matMenu">
+                    <button mat-menu-item>Refresh</button>
+                    <button mat-menu-item>Edit</button>
+                    <button mat-menu-item>Hide</button>
+                    <button mat-menu-item>Add Block</button>
+                    <button mat-menu-item>Reset Layout</button>
+                </mat-menu>
+            
+            <div class="table-div">
+                <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+
+                    <!--- Note that these columns can be defined in any order.
+                          The actual rendered columns are set as a property on the row definition" -->
+                  
+                    <!-- Position Column -->
+                    <ng-container matColumnDef="id">
+                      <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
+                      <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+                    </ng-container>
+                  
+                    <!-- Name Column -->
+                    <ng-container matColumnDef="s">
+                      <th mat-header-cell *matHeaderCellDef mat-sort-header> S </th>
+                      <td mat-cell *matCellDef="let element">  <span class="status2">{{element.s}}</span> </td>
+                    </ng-container>
+                  
+                    <!-- Weight Column -->
+                    <ng-container matColumnDef="title">
+                      <th mat-header-cell *matHeaderCellDef mat-sort-header> Title </th>
+                      <td mat-cell *matCellDef="let element"> {{element.title}} </td>
+                    </ng-container>
+                  
+                    <!-- Symbol Column -->
+                    <ng-container matColumnDef="status">
+                      <th mat-header-cell *matHeaderCellDef mat-sort-header> Status </th>
+                      <td mat-cell *matCellDef="let element"> {{element.status}} </td>
+                    </ng-container>
+                  
+                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                  </table>
+            </div>
+              
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12" style="background: white;">
+            <div class="product-header">My Stories</div>
+            
+                <button style="margin-top: -45px;margin-right: 5px;" mat-button [matMenuTriggerFor]="mainDropdown" class="float-right mb-2">
+                    <mat-icon matTooltip="Edit widget">drag_indicator</mat-icon>
+                </button>
+                <mat-menu #mainDropdown="matMenu">
+                    <button mat-menu-item>Refresh</button>
+                    <button mat-menu-item>Edit</button>
+                    <button mat-menu-item>Hide</button>
+                    <button mat-menu-item>Add Block</button>
+                    <button mat-menu-item>Reset Layout</button>
+                </mat-menu>
+            
+                <app-my-stories-table></app-my-stories-table>
+            
+        </div>
+    </div>
+</div>

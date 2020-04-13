@@ -1,0 +1,43 @@
+
+    <div class="row toolbar p-2">
+        <div class="col-xl-1 col-lg- col-md-1 col-sm-12 col-12"><span class="toolbar-logo-font pl-5 pb-2 cursor" routerLink="">Zentao ALM</span></div>
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2"></div>
+        <div class="col-xl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="row">
+              <div class="col-xl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 head" routerLink="/dashboard">Dashboard</div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 head" routerLink="/product">Product</div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 head" routerLink="/iteration">Iteration</div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 head" routerLink="/test">Test</div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 head" routerLink="/doc">Doc</div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 head" routerLink="/report">Report</div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 head" routerLink="/company">Company</div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 head" routerLink="/admin">Admin</div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="col-xl-3 header-filter pl-0 pr-0">
+            <select name="dropdown" id="filter-header">
+                Bug
+                <option value="">Test report</option>
+                <option value="">Bug</option>
+                <option value="">Task</option>
+                <option value="">Case</option>
+                <option value="">Request</option>
+                <option value="">Document</option>
+                
+            </select>
+            <span><input placeholder="ID (Ctrl+g)" type="text"></span>
+            <button class="btn-info">Go !</button>
+            <span>
+                <app-matmenu class="mat-menu"></app-matmenu>
+            </span>
+        </div>
+    </div>
+    

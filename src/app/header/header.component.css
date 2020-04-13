@@ -1,0 +1,86 @@
+
+.toolbar-logo-font{
+    float: left;
+    /* margin-left: 3% !important;
+    margin-bottom: 7px !important; */
+    max-width: 250px;
+    margin: 0;
+    overflow: hidden;
+    font-size: 24px;
+    /* font-weight: 400; */
+    line-height: 30px;
+    /* text-overflow: ellipsis; */
+    white-space: nowrap;
+}
+  .toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 15px;
+    /* height: 60px; */
+    display: flex;
+    align-items: center;
+    background: linear-gradient(100deg, #0F78F3, black);
+    color: white;
+    font-weight: 600;
+  }
+
+  .toolbar img {
+    margin: 0 16px;
+  }
+
+  .toolbar #twitter-logo {
+    height: 40px;
+    margin: 0 16px;
+  }
+  .head{
+      opacity: 0.85;
+  }
+.head:hover, .head:active{
+    background: white;
+    cursor: pointer;
+     color: black !important;
+    transition: .75s;
+    opacity: 1;
+}
+@media(min-width:769px){
+    .head{
+        text-align: center;
+    }
+    .mat-menu{
+        margin-left: 10%;
+        cursor: pointer;
+    }
+}
+@media(min-width:1250px){
+.toolbar{
+    position: sticky;
+    top: 0px;
+    z-index: 9999;
+}
+}
+button, input, optgroup, select, textarea{
+    line-height: initial;
+}
+.header-filter select{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    /* border-radius: 8px; */
+}
+option{
+    background-color: white;
+    color: #0D64D5;
+}
+.header-filter input{
+    width: 100px;
+    /* height: 27.5px; */
+    border: 1px solid black;
+}
+.header-filter button{
+    color: white;
+    background-color: #0D64D5;
+    cursor: pointer;
+    outline: none;
+}
+
