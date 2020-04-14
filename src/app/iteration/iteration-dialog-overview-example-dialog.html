@@ -1,0 +1,60 @@
+<style>
+    .header-filter select{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    /* border-radius: 8px; */
+}
+option{
+    background-color: white;
+    color: #0D64D5;
+}
+select, textarea{
+    width: -webkit-fill-available;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+</style>
+<h1 style="margin-top: 7%;">Create Iteration</h1>
+<div>
+  <div>Product Name</div> <span><input placeholder="My product" type="text" class="form-control"></span>
+  <div>Code</div> <span><input placeholder="code name" type="text" class="form-control"></span>
+ 
+  
+    Duration from
+ <input class="mb-2 mt-2" type="date" placeholder="from Date">
+ To
+ <input class="ml-1" type="date" placeholder="to date">
+  
+ 
+ Available days <input type="text" placeholder="6">
+
+ <div>Type Name</div> <span><input placeholder="Type name" type="text" class="form-control"></span>
+
+<div>Type</div>
+<select name="dropdown" id="filter-header">
+  Type
+  <option value="">Normal</option>
+  <option value="">Multi-Branch</option>
+  <option value="">Multi-Platform</option>
+</select>
+
+<div>Linked Products</div>
+<select name="dropdown" id="filter-header">
+  Linked Products
+  <option value="">A Smart Watch Development</option>
+  <option value="">Engine Developing</option>
+  <option value="">Zsite</option>
+  <option value="">Zentao Desktop</option>
+  <option value="">Zentao Cloud</option>
+</select>
+<div>Linked Plans</div> <span><input placeholder="Linked plans" type="text" class="form-control"></span>
+ <br>
+
+ Description
+ <textarea placeholder="My description" name="description_create_product" id="description_product"></textarea>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()"  class="btn btn-primary">Back</button>
+  <button mat-button cdkFocusInitial class="btn btn-success ml-2" (click)="save()">Save</button>
+</div>
