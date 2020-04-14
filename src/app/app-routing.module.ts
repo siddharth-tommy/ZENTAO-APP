@@ -8,12 +8,14 @@ import { DocComponent } from './doc/doc.component';
 import { ReportComponent } from './report/report.component';
 import { CompanyComponent } from './company/company.component';
 import { AdminComponent } from './admin/admin.component';
+import { LoginComponent } from './login/login.component';
 
 
 
 
 const routes: Routes = [
-  { path: '', component: DashboardComponent },
+  { path: '', component: LoginComponent },
+  { path: 'Zentao_login', component: LoginComponent, },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'product', component: ProductComponent },
   { path: 'iteration', component: IterationComponent },

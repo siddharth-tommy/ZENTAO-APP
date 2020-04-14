@@ -1,1 +1,512 @@
-<p>doc works!</p>
+<br>
+<button [matMenuTriggerFor]="createLib" style="margin-right: 30px;float: right;margin-top: -7px;"
+    class="btn btn-primary"><span>
+        <mat-icon style="vertical-align: middle;margin-right: 5px">add_circle</mat-icon>
+    </span>Create Document <mat-icon style="vertical-align: middle;margin-right: 5px">keyboard_arrow_down</mat-icon>
+</button>
+<mat-menu #createLib="matMenu">
+    <button mat-menu-item>Html</button>
+    <button mat-menu-item>Markdown</button>
+    <button mat-menu-item>URL</button>
+    <button mat-menu-item>Word</button>
+    <button mat-menu-item>PPT</button>
+    <button mat-menu-item>Excel</button>
+</mat-menu>
+<button style="margin-right: 30px;float: right;margin-top: -7px;" class="btn btn-info"><span>
+        <mat-icon style="vertical-align: middle;margin-right: 5px">add_circle</mat-icon>
+    </span>Create Document Library
+</button>
+<button [matMenuTriggerFor]="quickEntry" style="margin-right: 30px;float: right;margin-top: -7px;"
+    class="btn btn-succcess"><span>
+        Quick Entry <mat-icon style="vertical-align: middle;margin-right: 5px">keyboard_arrow_down</mat-icon>
+    </span>
+</button>
+<mat-menu #quickEntry="matMenu">
+    <button mat-menu-item>Recently Edited</button>
+    <button mat-menu-item>My Documents</button>
+    <button mat-menu-item>My Favorites</button>
+</mat-menu>
+<input type="search" class="form-controls" placeholder="Search">
+
+<div class="dashboard-body p-3">
+    <div class="row mt-4 ">
+        <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+            <div class="status-monitoring-table" style="height: 360px;">
+                <mat-tab-group>
+                    <mat-tab label="Product">
+                        <mat-accordion>
+                            <mat-expansion-panel>
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title>
+                                        A smart watch development
+                                    </mat-panel-title>
+                                </mat-expansion-panel-header>
+
+                                <div class="ml-2" style="color: grey;line-height: 25px;font-size: 15px;letter-spacing: 1px;">
+                                    <div><mat-icon>sort</mat-icon>Iteration Library</div>
+                                    <div><mat-icon> attach_file</mat-icon> Attachments</div>
+                                </div>
+
+                            </mat-expansion-panel>
+
+                            <mat-expansion-panel>
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title>
+                                        A smart watch development
+                                    </mat-panel-title>
+                                </mat-expansion-panel-header>
+
+                                <div class="ml-2" style="color: grey;line-height: 25px;font-size: 15px;letter-spacing: 1px;">
+                                    <div><mat-icon>sort</mat-icon>Iteration Library</div>
+                                    <div><mat-icon> attach_file</mat-icon> Attachments</div>
+                                </div>
+
+                            </mat-expansion-panel>
+
+                            <mat-expansion-panel>
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title>
+                                        Engine Developing
+                                    </mat-panel-title>
+                                </mat-expansion-panel-header>
+
+                                <div class="ml-2" style="color: grey;line-height: 25px;font-size: 15px;letter-spacing: 1px;">
+                                    <div><mat-icon>sort</mat-icon>Iteration Library</div>
+                                    <div><mat-icon> attach_file</mat-icon> Attachments</div>
+                                </div>
+
+                            </mat-expansion-panel>
+
+                            <mat-expansion-panel>
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title>
+                                        Xuanxuan IM Tool
+                                    </mat-panel-title>
+                                </mat-expansion-panel-header>
+
+                                <div class="ml-2" style="color: grey;line-height: 25px;font-size: 15px;letter-spacing: 1px;">
+                                    <div><mat-icon>sort</mat-icon>Iteration Library</div>
+                                    <div><mat-icon> attach_file</mat-icon> Attachments</div>
+                                </div>
+
+                            </mat-expansion-panel>
+
+                            <mat-expansion-panel>
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title>
+                                        Zsite
+                                    </mat-panel-title>
+                                </mat-expansion-panel-header>
+
+                                <div class="ml-2" style="color: grey;line-height: 25px;font-size: 15px;letter-spacing: 1px;">
+                                    <div><mat-icon>sort</mat-icon>Iteration Library</div>
+                                    <div><mat-icon> attach_file</mat-icon> Attachments</div>
+                                </div>
+
+                            </mat-expansion-panel>
+                        
+                            <mat-expansion-panel>
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title>
+                                        Zdoo crm
+                                    </mat-panel-title>
+                                </mat-expansion-panel-header>
+
+                                <div class="ml-2" style="color: grey;line-height: 25px;font-size: 15px;letter-spacing: 1px;">
+                                    <div><mat-icon>sort</mat-icon>Iteration Library</div>
+                                    <div><mat-icon> attach_file</mat-icon> Attachments</div>
+                                </div>
+
+                            </mat-expansion-panel>
+
+                            <mat-expansion-panel>
+
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title>
+                                        Zentao Desktop
+                                    </mat-panel-title>
+                                </mat-expansion-panel-header>
+
+                                <div class="ml-2" style="color: grey;line-height: 25px;font-size: 15px;letter-spacing: 1px;">
+                                    <div><mat-icon>sort</mat-icon>Iteration Library</div>
+                                    <div><mat-icon> attach_file</mat-icon> Attachments</div>
+                                </div>
+
+                            </mat-expansion-panel>
+                        </mat-accordion>
+
+                    </mat-tab>
+                    <mat-tab label="Iteration">
+                        <mat-accordion>
+                            <mat-expansion-panel>
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title>
+                                        Test Sprint
+                                    </mat-panel-title>
+                                </mat-expansion-panel-header>
+
+                                <div class="ml-2" style="color: grey;line-height: 25px;font-size: 15px;letter-spacing: 1px;">
+                                    <div><mat-icon>sort</mat-icon>Iteration Library</div>
+                                    <div><mat-icon> attach_file</mat-icon> Attachments</div>
+                                </div>
+
+                            </mat-expansion-panel>
+
+                            <mat-expansion-panel>
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title>
+                                        Zentao Client Desktop
+                                    </mat-panel-title>
+                                </mat-expansion-panel-header>
+
+                                <div class="ml-2" style="color: grey;line-height: 25px;font-size: 15px;letter-spacing: 1px;">
+                                    <div><mat-icon>sort</mat-icon>Iteration Library</div>
+                                    <div><mat-icon> attach_file</mat-icon> Attachments</div>
+                                </div>
+
+                            </mat-expansion-panel>
+
+                            <mat-expansion-panel>
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title>
+                                        Login through facebook ID
+                                    </mat-panel-title>
+                                </mat-expansion-panel-header>
+
+                                <div class="ml-2" style="color: grey;line-height: 25px;font-size: 15px;letter-spacing: 1px;">
+                                    <div><mat-icon>sort</mat-icon>Iteration Library</div>
+                                    <div><mat-icon> attach_file</mat-icon> Attachments</div>
+                                </div>
+
+                            </mat-expansion-panel>
+
+                            <mat-expansion-panel>
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title>
+                                        Xuanxuan IM Tool
+                                    </mat-panel-title>
+                                </mat-expansion-panel-header>
+
+                                <div class="ml-2" style="color: grey;line-height: 25px;font-size: 15px;letter-spacing: 1px;">
+                                    <div><mat-icon>sort</mat-icon>Iteration Library</div>
+                                    <div><mat-icon> attach_file</mat-icon> Attachments</div>
+                                </div>
+
+                            </mat-expansion-panel>
+
+                            <mat-expansion-panel>
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title>
+                                        Zsite
+                                    </mat-panel-title>
+                                </mat-expansion-panel-header>
+
+                                <div class="ml-2" style="color: grey;line-height: 25px;font-size: 15px;letter-spacing: 1px;">
+                                    <div><mat-icon>sort</mat-icon>Iteration Library</div>
+                                    <div><mat-icon> attach_file</mat-icon> Attachments</div>
+                                </div>
+
+                            </mat-expansion-panel>
+                        
+                            <mat-expansion-panel>
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title>
+                                        Zdoo crm
+                                    </mat-panel-title>
+                                </mat-expansion-panel-header>
+
+                                <div class="ml-2" style="color: grey;line-height: 25px;font-size: 15px;letter-spacing: 1px;">
+                                    <div><mat-icon>sort</mat-icon>Iteration Library</div>
+                                    <div><mat-icon> attach_file</mat-icon> Attachments</div>
+                                </div>
+
+                            </mat-expansion-panel>
+
+                            <mat-expansion-panel>
+
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title>
+                                        Zentao Desktop
+                                    </mat-panel-title>
+                                </mat-expansion-panel-header>
+
+                                <div class="ml-2" style="color: grey;line-height: 25px;font-size: 15px;letter-spacing: 1px;">
+                                    <div><mat-icon>sort</mat-icon>Iteration Library</div>
+                                    <div><mat-icon> attach_file</mat-icon> Attachments</div>
+                                </div>
+
+                            </mat-expansion-panel>
+                        </mat-accordion>
+                    </mat-tab>
+                    <mat-tab label="Custom">
+                        <mat-accordion>
+                            <mat-expansion-panel>
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title>
+                                        A smart watch development
+                                    </mat-panel-title>
+                                </mat-expansion-panel-header>
+
+                                <div class="ml-2" style="color: grey;line-height: 25px;font-size: 15px;letter-spacing: 1px;">
+                                    <div><mat-icon>sort</mat-icon>Iteration Library</div>
+                                    <div><mat-icon> attach_file</mat-icon> Attachments</div>
+                                </div>
+
+                            </mat-expansion-panel>
+
+                            <mat-expansion-panel>
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title>
+                                        A smart watch development
+                                    </mat-panel-title>
+                                </mat-expansion-panel-header>
+
+                                <div class="ml-2" style="color: grey;line-height: 25px;font-size: 15px;letter-spacing: 1px;">
+                                    <div><mat-icon>sort</mat-icon>Iteration Library</div>
+                                    <div><mat-icon> attach_file</mat-icon> Attachments</div>
+                                </div>
+
+                            </mat-expansion-panel>
+
+                            <mat-expansion-panel>
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title>
+                                        Engine Developing
+                                    </mat-panel-title>
+                                </mat-expansion-panel-header>
+
+                                <div class="ml-2" style="color: grey;line-height: 25px;font-size: 15px;letter-spacing: 1px;">
+                                    <div><mat-icon>sort</mat-icon>Iteration Library</div>
+                                    <div><mat-icon> attach_file</mat-icon> Attachments</div>
+                                </div>
+
+                            </mat-expansion-panel>
+
+                            <mat-expansion-panel>
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title>
+                                        Xuanxuan IM Tool
+                                    </mat-panel-title>
+                                </mat-expansion-panel-header>
+
+                                <div class="ml-2" style="color: grey;line-height: 25px;font-size: 15px;letter-spacing: 1px;">
+                                    <div><mat-icon>sort</mat-icon>Iteration Library</div>
+                                    <div><mat-icon> attach_file</mat-icon> Attachments</div>
+                                </div>
+
+                            </mat-expansion-panel>
+
+                            <mat-expansion-panel>
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title>
+                                        Zsite
+                                    </mat-panel-title>
+                                </mat-expansion-panel-header>
+
+                                <div class="ml-2" style="color: grey;line-height: 25px;font-size: 15px;letter-spacing: 1px;">
+                                    <div><mat-icon>sort</mat-icon>Iteration Library</div>
+                                    <div><mat-icon> attach_file</mat-icon> Attachments</div>
+                                </div>
+
+                            </mat-expansion-panel>
+                        
+                            <mat-expansion-panel>
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title>
+                                        Zdoo crm
+                                    </mat-panel-title>
+                                </mat-expansion-panel-header>
+
+                                <div class="ml-2" style="color: grey;line-height: 25px;font-size: 15px;letter-spacing: 1px;">
+                                    <div><mat-icon>sort</mat-icon>Iteration Library</div>
+                                    <div><mat-icon> attach_file</mat-icon> Attachments</div>
+                                </div>
+
+                            </mat-expansion-panel>
+
+                            <mat-expansion-panel>
+
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title>
+                                        Zentao Desktop
+                                    </mat-panel-title>
+                                </mat-expansion-panel-header>
+
+                                <div class="ml-2" style="color: grey;line-height: 25px;font-size: 15px;letter-spacing: 1px;">
+                                    <div><mat-icon>sort</mat-icon>Iteration Library</div>
+                                    <div><mat-icon> attach_file</mat-icon> Attachments</div>
+                                </div>
+
+                            </mat-expansion-panel>
+                        </mat-accordion>
+                    </mat-tab>
+                </mat-tab-group>
+            </div>
+        </div>
+        <div class="col-xl-7 col-lg-7 col-md-12 col-12 col-12">
+            <div class="status-monitoring-table">
+               
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="row">
+                            <div class="col-xl-11 col-lg-11 col-md-11 col-sm-11 col-11">
+                                <div class="task-history-header">Recently Updated</div>
+                            </div>
+                            <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 more-icon">
+                                <button style="margin-left: -15px; margin-top: 8px;" mat-button [matMenuTriggerFor]="mainDropdown">
+                                    <mat-icon matTooltip="Edit widget" style="margin-right: 0;">drag_indicator</mat-icon>
+                                </button>
+                                <mat-menu #mainDropdown="matMenu">
+                                    <button mat-menu-item>Refresh</button>
+                                    <button mat-menu-item>Edit</button>
+                                    <button mat-menu-item>Hide</button>
+                                    <button mat-menu-item>Add Block</button>
+                                    <button mat-menu-item>Reset Layout</button>
+                                </mat-menu>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-12 col-md-12 col-lg-12 col-sm-12 col-12">
+                                <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+
+                                    <ng-container matColumnDef="name">
+                                      <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
+                                      <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                                    </ng-container>
+                                    
+                                    <ng-container matColumnDef="size">
+                                      <th mat-header-cell *matHeaderCellDef mat-sort-header> Size </th>
+                                      <td mat-cell *matCellDef="let element">  <span>{{element.size}}</span> </td>
+                                    </ng-container>
+                                  
+                                    <ng-container matColumnDef="author">
+                                      <th mat-header-cell *matHeaderCellDef mat-sort-header> Author </th>
+                                      <td mat-cell *matCellDef="let element"> {{element.author}} </td>
+                                    </ng-container>
+                                  
+                                    <ng-container matColumnDef="updatedDate">
+                                      <th mat-header-cell *matHeaderCellDef mat-sort-header> Updated Date </th>
+                                      <td mat-cell *matCellDef="let element"> {{element.updatedDate}} </td>
+                                    </ng-container>
+                                  
+                                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                                  </table>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="border: 1px solid black;">
+                        <div class="status-monitoring-table">
+                            <div class="row">
+                                <div class="col-xl-11 col-lg-11 col-md-11 col-sm-11 col-11">
+                                    <div class="task-history-header">All Documents <span class="status2">0</span></div>
+                                </div>
+                                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 more-icon">
+                                    <button style="margin-left: -15px; margin-top: 8px;" mat-button [matMenuTriggerFor]="mainDropdown">
+                                        <mat-icon matTooltip="Edit widget" style="margin-right: 0;">drag_indicator</mat-icon>
+                                    </button>
+                                    <mat-menu #mainDropdown="matMenu">
+                                        <button mat-menu-item>Refresh</button>
+                                        <button mat-menu-item>Edit</button>
+                                        <button mat-menu-item>Hide</button>
+                                        <button mat-menu-item>Add Block</button>
+                                        <button mat-menu-item>Reset Layout</button>
+                                    </mat-menu>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="text-center">No data</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row pt-3">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-12 col-12">
+            <div class="status-monitoring-table">
+               
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="row">
+                            <div class="col-xl-11 col-lg-11 col-md-11 col-sm-11 col-11">
+                                <div class="task-history-header">Unfinished Iterations</div>
+                            </div>
+                            <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 more-icon">
+                                <button style="margin-top: 8px;" mat-button [matMenuTriggerFor]="mainDropdown">
+                                    <mat-icon matTooltip="Edit widget" style="margin-right: 0;">drag_indicator</mat-icon>
+                                </button>
+                                <mat-menu #mainDropdown="matMenu">
+                                    <button mat-menu-item>Refresh</button>
+                                    <button mat-menu-item>Edit</button>
+                                    <button mat-menu-item>Hide</button>
+                                    <button mat-menu-item>Add Block</button>
+                                    <button mat-menu-item>Reset Layout</button>
+                                </mat-menu>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <table mat-table [dataSource]="dataSource2" matSort class="mat-elevation-z8">
+
+                                    <ng-container matColumnDef="iName">
+                                      <th mat-header-cell *matHeaderCellDef mat-sort-header> Iteration Name </th>
+                                      <td mat-cell *matCellDef="let element"> <span><mat-icon style="color: orange;">folder</mat-icon>
+                                      </span> {{element.iName}} </td>
+                                    </ng-container>
+                                    
+                                    <ng-container matColumnDef="begin">
+                                      <th mat-header-cell *matHeaderCellDef mat-sort-header> Begin </th>
+                                      <td mat-cell *matCellDef="let element">  <span>{{element.begin}}</span> </td>
+                                    </ng-container>
+                                  
+                                    <ng-container matColumnDef="end">
+                                      <th mat-header-cell *matHeaderCellDef mat-sort-header> End </th>
+                                      <td mat-cell *matCellDef="let element"> {{element.end}} </td>
+                                    </ng-container>
+                                  
+                                    <tr mat-header-row *matHeaderRowDef="displayedColumns2"></tr>
+                                    <tr mat-row *matRowDef="let row; columns: displayedColumns2;"></tr>
+                                  </table>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="status-monitoring-table">
+                            <div class="row">
+                                <div class="col-xl-11 col-lg-11 col-md-11 col-sm-11 col-11">
+                                    <div class="task-history-header">My Documents <span class="status2">7</span></div>
+                                </div>
+                                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 more-icon">
+                                    <button style="margin-top: 8px;" mat-button [matMenuTriggerFor]="mainDropdown">
+                                        <mat-icon matTooltip="Edit widget" style="margin-right: 0;">drag_indicator</mat-icon>
+                                    </button>
+                                    <mat-menu #mainDropdown="matMenu">
+                                        <button mat-menu-item>Refresh</button>
+                                        <button mat-menu-item>Edit</button>
+                                        <button mat-menu-item>Hide</button>
+                                        <button mat-menu-item>Add Block</button>
+                                        <button mat-menu-item>Reset Layout</button>
+                                    </mat-menu>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <app-my-stories-table></app-my-stories-table>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

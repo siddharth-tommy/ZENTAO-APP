@@ -14,6 +14,12 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatTableModule} from '@angular/material/table';
 import {MatDialogModule} from '@angular/material/dialog';
 import { ToastrModule } from 'ngx-toastr';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+
+
 
 //  Components installed
 import { AppComponent } from './app.component';
@@ -32,6 +38,7 @@ import { MatStepperloginHistoryComponent } from './mat-stepperlogin-history/mat-
 import { MyStoriesTableComponent } from './my-stories-table/my-stories-table.component';
 import { CreateProductComponent } from './create-product/create-product.component';
 import { CreateIterationComponent } from './create-iteration/create-iteration.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -53,6 +60,7 @@ import { CreateIterationComponent } from './create-iteration/create-iteration.co
     MyStoriesTableComponent,
     CreateProductComponent,
     CreateIterationComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -69,7 +77,13 @@ import { CreateIterationComponent } from './create-iteration/create-iteration.co
     MatCheckboxModule,
     MatTableModule,
     MatDialogModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    MatExpansionModule,
+    MatTabsModule,
+    MatFormFieldModule,
+    MatInputModule
+    
+
    
   ],
   exports: [HeaderComponent],

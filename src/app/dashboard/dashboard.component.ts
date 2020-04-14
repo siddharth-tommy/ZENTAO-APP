@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatBottomSheet, MatBottomSheetRef } from '@angular/material/bottom-sheet';
 import { MatSort, Sort } from '@angular/material/sort';
+import { NotificationService } from '../notification.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -51,7 +52,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   templateUrl: 'bottom-sheet-overview-example-sheet.html',
 })
 export class BottomSheetOverviewExampleSheet {
-  constructor(private _bottomSheetRef: MatBottomSheetRef<BottomSheetOverviewExampleSheet>) {}
+  constructor(public notifyService : NotificationService, private _bottomSheetRef: MatBottomSheetRef<BottomSheetOverviewExampleSheet>) {}
 
   openLink(event: MouseEvent): void {
     this._bottomSheetRef.dismiss();
@@ -60,5 +61,8 @@ export class BottomSheetOverviewExampleSheet {
   close(){
     this._bottomSheetRef.dismiss(); 
   }
-  
+  saveToDo(){
+    this.notifyService.success("Todo Created successfully !", "Success");
+    this._bottomSheetRef.dismiss(); 
+  }
 }

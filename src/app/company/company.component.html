@@ -1,1 +1,107 @@
-<p>company works!</p>
+<br>
+<nav id="subNavbar" class="mb-4">
+    <ul class="nav nav-default" style="position: static;">
+        <li class="active"><a style="background: #007bff;">User</a>
+        </li>
+        <li><a>Department</a>
+        </li>
+        
+        <li><a>Previlege</a>
+        </li>
+        <li ><a>Dynamics</a>
+        </li>
+        <li ><a>Company</a>
+        </li>
+    </ul>
+</nav>
+<div class="dashboard-body p-2">
+    <div class="row">
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
+            <div class="">
+                <button class="btn btn-info" [matMenuTriggerFor]="more">Departments  <span><mat-icon>keyboard_arrow_down</mat-icon></span></button>
+                <mat-menu #more="matMenu">
+                    <button mat-menu-item>Dev</button>
+                    <button mat-menu-item>QA</button>
+                    <button mat-menu-item>Project</button>
+                    <button mat-menu-item>HR</button>
+                    <button class="mt-1 cursor" type="button">Manage Department</button>
+                </mat-menu>
+
+            </div>
+        </div>
+        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12">
+            <div class="row">
+               <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                   <input type="search" placeholder="search" class="form-control">
+               </div>
+            </div>
+            <div class="row pt-3">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="table-height">
+                <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+                      
+                        
+                    <ng-container matColumnDef="id">
+                      <th mat-header-cell *matHeaderCellDef mat-sort-header>Id</th>
+                      <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="name">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header>Name</th>
+                        <td mat-cell *matCellDef="let element"> <span style="color: indigo;">{{element.name}}</span></td>
+                      </ng-container>
+                  
+                    <ng-container matColumnDef="account">
+                      <th mat-header-cell *matHeaderCellDef mat-sort-header> Account </th>
+                      <td mat-cell *matCellDef="let element">{{element.account}}</td>
+                    </ng-container>
+                  
+                    <ng-container matColumnDef="role">
+                      <th mat-header-cell *matHeaderCellDef mat-sort-header> Role </th>
+                      <td mat-cell *matCellDef="let element"> {{element.role}} </td>
+                    </ng-container>
+                    
+                    <ng-container matColumnDef="email">
+                      <th mat-header-cell *matHeaderCellDef mat-sort-header> Email </th>
+                      <td mat-cell *matCellDef="let element"><span style="color: indigo;"><u>{{element.email}}</u></span></td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="gend">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header> Gender </th>
+                        <td mat-cell *matCellDef="let element"> {{element.gend}} </td>
+                      </ng-container>
+
+                      <ng-container matColumnDef="ph">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header> Phone </th>
+                        <td mat-cell *matCellDef="let element"> {{element.ph}} </td>
+                      </ng-container>
+
+                      <ng-container matColumnDef="skype">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header> Skype </th>
+                        <td mat-cell *matCellDef="let element"> {{element.skype}} </td>
+                      </ng-container>
+
+                      <ng-container matColumnDef="lLog">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header> Last Login </th>
+                        <td mat-cell *matCellDef="let element"> {{element.lLog}} </td>
+                      </ng-container>
+
+                      <ng-container matColumnDef="visit">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header> Visits </th>
+                        <td mat-cell *matCellDef="let element"> {{element.visit}} </td>
+                      </ng-container>
+
+                      <ng-container matColumnDef="act">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header> Action </th>
+                        <td mat-cell *matCellDef="let element"> {{element.act}} <span><mat-icon>delete_outline</mat-icon></span> </td>
+                      </ng-container>
+                  
+                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                  </table>
+              </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
