@@ -97,3 +97,46 @@ table {
 mat-icon{
     vertical-align: middle;
 }
+@media(max-width:1442px) and (min-width:1370px){
+    #subNavbar{
+        margin-top: 0;
+    }
+}
+@media(max-width:1310px) and (min-width:900px){
+    #subNavbar{
+        margin-top: 11% !important;
+    }
+}
+@media(max-width:1035px) and (min-width:850px){
+    #subNavbar{
+        margin-top: 16% !important;
+    }
+}
+@media(max-width:849px)and (min-width:651px){
+    #subNavbar{
+        margin-top: 42% !important;
+    }
+}
+@media(max-width:650px) and (min-width:480px){
+    #subNavbar{
+        margin-top: 60% !important;
+    }
+}
+@media(max-width:479px) and (min-width:310px){
+    #subNavbar{
+        margin-top: 83% !important;
+    }
+}
+@media(max-width:799px){
+    .nav-default li a{
+        padding: 3px;
+        font-size: 12px;
+        color: black;
+        background: whitesmoke;
+        border: 1px solid grey;
+        text-decoration: none;
+        border-radius: 10px;
+        margin-left: 2px;
+        cursor: pointer;
+    }
+}

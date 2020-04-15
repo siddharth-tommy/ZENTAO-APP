@@ -1,0 +1,219 @@
+#subNavbar{
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+#subNavbar .nav{
+    display: inline-block;
+}
+.nav-default>li{
+    float: left;
+}
+.nav-default li a{
+    padding: 10px;
+    font-size: 15px;
+    color: black;
+    background: whitesmoke;
+    border: 1px solid grey;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.nav-default li a:hover,.nav-default li a:active{
+    background-color: #22A7F0;
+    transition: 0.9s;  
+}
+button{
+    font-size: 14.5px;
+    border: none;
+}
+.light-yellow{
+    background-color: #FADA5E;
+}
+.table-ul ul{
+    list-style-type: none;
+    padding: 0;
+    height: 240px;
+    overflow-y: auto;
+}
+.table-ul ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color:black;
+    
+}
+.table-ul ul li a:hover{
+  font-size: 19px;
+  transition: 1s;
+}
+.table-ul ul li{
+   background-color: transparent;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   padding-left: 15px;
+}
+.table-ul ul li:hover, .table-ul ul li:active{
+   background-color: whitesmoke;
+   border-left: 3px solid black;
+   cursor: pointer;
+}
+.dashboard-body{
+    background-color: #EFEFEF;
+    height: auto;
+}
+.status-monitoring-table{
+    background-color: white;
+}
+.product-header{
+    font-size: 17px;
+    color: black;
+    font-weight: 400;
+    margin: 19px;
+    font-weight: bold;
+}
+.stories-monitor{
+    font-size: 30px;
+    color: black;
+}
+table {
+   width: 100%;
+ 
+ }
+ th.mat-sort-header-sorted {
+   color: black;
+ }
+ tr:nth-child(even) {
+     background-color: whitesmoke;
+ }
+ .table-div{
+     height: 350px;
+     overflow-y: auto;
+     margin-bottom: 10px;
+   }
+   .status-red-text{
+       color: tomato;
+   }
+mat-icon{
+    vertical-align: middle;
+}
+.task-history-header{
+    padding-top: 6px;
+    padding-left: 20px;
+    font-weight: bold;
+    color: black;
+}
+.task-history-header-2{
+    padding-top: 6px;
+    padding-left: 20px;
+    font-weight: normal;
+    color: black;   
+}
+.table-height{
+    height: 400px;
+    overflow-y: auto;
+}
+
+
+.panel {
+    position: relative;
+    min-height: 230px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05), 0 2px 6px 0 rgba(0,0,0,.045);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05), 0 2px 6px 0 rgba(0,0,0,.045);
+}
+.panel-heading {
+    padding: 6px 10px;
+}
+.panel-body {
+    padding: 10px;
+}
+.panel-title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+}
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+#zentaoLinks ul > li {
+    line-height: 24px;
+    padding-top: 3px;
+}
+#proversion, #zentaotrain {
+    color: #ff5d5d;
+}
+a {
+    color: #3c4353;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition: .4s cubic-bezier(.175,.885,.32,1);
+    -o-transition: .4s cubic-bezier(.175,.885,.32,1);
+    transition: .4s cubic-bezier(.175,.885,.32,1);
+    -webkit-transition-property: color,background,opacity,-webkit-transform;
+    -o-transition-property: color,background,opacity,-o-transform;
+    transition-property: color,background,opacity,-webkit-transform;
+    transition-property: color,background,transform,opacity;
+    transition-property: color,background,transform,opacity,-webkit-transform,-o-transform;
+}
+a:hover{
+    cursor: pointer;
+    font-size: 16px;
+    transition: 1s;
+    border-bottom: 1px solid #007BFF;
+}
+
+@media(min-width:1089px){
+    .lap-view-padding{
+        margin-left: 10%;
+    }
+}
+
+@media(max-width:1442px) and (min-width:1370px){
+    #subNavbar{
+        margin-top: 0;
+    }
+}
+@media(max-width:1310px) and (min-width:900px){
+    #subNavbar{
+        margin-top: 11% !important;
+    }
+}
+@media(max-width:1035px) and (min-width:850px){
+    #subNavbar{
+        margin-top: 16% !important;
+    }
+}
+@media(max-width:849px)and (min-width:651px){
+    #subNavbar{
+        margin-top: 42% !important;
+    }
+}
+@media(max-width:650px) and (min-width:480px){
+    #subNavbar{
+        margin-top: 60% !important;
+    }
+}
+@media(max-width:479px) and (min-width:310px){
+    #subNavbar{
+        margin-top: 83% !important;
+    }
+}
+@media(max-width:799px){
+    .nav-default li a{
+        padding: 3px;
+        font-size: 12px;
+        color: black;
+        background: whitesmoke;
+        border: 1px solid grey;
+        text-decoration: none;
+        border-radius: 10px;
+        margin-left: 2px;
+        cursor: pointer;
+    }
+}

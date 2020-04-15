@@ -71,6 +71,11 @@ a:active{
         padding: 12% 1% 7% 12%;
     }
 }
+.label-red{
+    columns: tomato;
+    font-size: 13px;
+    border: 1px solid red;
+}
 @media(max-width:768px){
   .welcome-stepper-div{
     border-bottom: 0.5px solid grey;

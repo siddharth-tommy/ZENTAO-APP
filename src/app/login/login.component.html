@@ -1,3 +1,4 @@
+
 <div class="container-fluid">
 
     <div class="row login-position">
@@ -9,15 +10,15 @@
            <div class="row">
                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                 <div>
-                    <div class="login-header" >Login</div>
+                    <!-- <div class="login-header" >Login</div> -->
                 </div>
                </div>
            </div>
            <div class="row pt-3">
-               <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 col-12 text-left">
+               <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 d-none d-sm-block text-left">
                    <h1 style="font-weight: 500;">Zentao ALM</h1>
                </div>
-               <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+               <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 d-none d-sm-block">
                    <button [matMenuTriggerFor]="lang" class="btn btn-primary" matTooltip="Language">English <span><mat-icon>keyboard_arrow_down</mat-icon></span></button>
                    <mat-menu #lang="matMenu">
                     <button mat-menu-item>简体</button>
@@ -30,7 +31,7 @@
            </div>
            <hr>
            <div class="row pt-3">
-               <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+               <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12 d-sm-block d-none">
                    <img src="../../assets/img/zento-logo.png" alt="zentao_logo">
                </div>
                <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
@@ -54,7 +55,15 @@
                 </div>
                 <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 co-12">
-                        <button (click)="login()" routerLink="/dashboard" class="btn btn-success">Login</button>
+                        <button (click)="login()" routerLink="/dashboard" class="btn btn-primary">Login</button>
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <a href="https://demo.zentao.pm/user-login-Lw==.html" target="blank"><mat-icon class="ml-2" matTooltip="Opensource"> directions_bike</mat-icon></a>
+                        <a href="https://pro.demo.zentao.pm/user-login-Lw==.html" target="blank"><mat-icon class="ml-2" matTooltip="Enterprise"> motorcycle</mat-icon></a>
+                        <a href="https://biz.demo.zentao.pm/user-login-Lw==.html" target="blank"><mat-icon class="ml-2" matTooltip="Professional"> local_car_wash</mat-icon></a>
+
                     </div>
                 </div>
                 

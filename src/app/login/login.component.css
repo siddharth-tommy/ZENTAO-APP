@@ -1,8 +1,8 @@
 .container-fluid{
-    height:88vh;
+    height:100vh;
     padding: 0;
     margin: 0;
-    background-color: whitesmoke;
+    background: linear-gradient(45deg, white, #0F75ED);
 }
 
 .login-panel{
@@ -28,4 +28,30 @@
 
 mat-icon{
     vertical-align: middle;
+}
+.btn-primary:hover{
+transition: .8s;
+border: 3px solid #062E5D;
+}
+
+@media(max-width:1325px) and (min-width:846px){
+    .container-fluid{
+        padding-top: 35px;
+    }
+}
+@media(max-width:845px) and (min-width:550px){
+    .container-fluid{
+        padding-top: 30%;
+    }
+}
+
+@media(max-width:500px){
+    .container-fluid{
+        padding-top: 49%;
+    }
+    .login-panel{
+        border: none;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 }
